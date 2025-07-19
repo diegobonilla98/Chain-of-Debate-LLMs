@@ -2,6 +2,8 @@
 
 A collaborative AI debate system that leverages multiple AI agents to solve complex problems through structured argumentation and consensus-building.
 
+![](./CoD.png)
+
 ## Overview
 
 Chain of Debate is a Python library that implements a multi-agent debate system where:
