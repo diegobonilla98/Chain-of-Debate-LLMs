@@ -1,0 +1,6 @@
+openai>=1.0.0
+openai-cost-calculator>=0.2.0
+PyYAML>=6.0
+tqdm>=4.64.0
+asyncio
+typing-extensions>=4.0.0

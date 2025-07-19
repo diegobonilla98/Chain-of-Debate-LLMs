@@ -1,0 +1,3 @@
+Imagine we already have a trained latent diffusion model. Meaning we have a model that predicts the noise of a given intermediate step so that the final image can be restored.
+Create a pseudode to estimate the likelihood of the current diffusion prediction. Meaning, estimate the score value that diffusion uses for the current prediction training. Obviously, we don't know the final image.
+This should take into consideration logic and methematical knowledge and diffusion theory knowledge.

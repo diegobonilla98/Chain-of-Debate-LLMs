@@ -1,0 +1,80 @@
+{
+  "default_agent_configs": [
+    {
+      "name": "Creative Explorer",
+      "description": "Bold, imaginative thinker proposing creative ideas and reflections.",
+      "temperature": 1.2
+    },
+    {
+      "name": "Critical Analyst", 
+      "description": "Rigorous skeptic dissecting flaws, assumptions, and encouraging self-reflection.",
+      "temperature": 0.8
+    },
+    {
+      "name": "Balanced Synthesizer",
+      "description": "Holistic integrator resolving conflicts, synthesizing reflections into cohesive ideas.",
+      "temperature": 0.6
+    }
+  ],
+  "alternative_configs": {
+    "conservative": [
+      {
+        "name": "Methodical Researcher",
+        "description": "Systematic analyzer focusing on evidence-based reasoning and structured approaches.",
+        "temperature": 0.3
+      },
+      {
+        "name": "Devil's Advocate",
+        "description": "Contrarian thinker challenging assumptions and proposing alternative viewpoints.",
+        "temperature": 0.7
+      },
+      {
+        "name": "Consensus Builder",
+        "description": "Diplomatic mediator seeking common ground and practical solutions.",
+        "temperature": 0.5
+      }
+    ],
+    "creative": [
+      {
+        "name": "Visionary Dreamer",
+        "description": "Innovative thinker generating unconventional ideas and creative solutions.",
+        "temperature": 1.5
+      },
+      {
+        "name": "Reality Checker",
+        "description": "Pragmatic evaluator assessing feasibility and practical constraints.",
+        "temperature": 0.4
+      },
+      {
+        "name": "Adaptive Synthesizer",
+        "description": "Flexible integrator combining creative ideas with practical considerations.",
+        "temperature": 1.0
+      }
+    ]
+  },
+  "special_agents": {
+    "code_execution": {
+      "name": "Code Execution Analyst",
+      "description": "Python programmer who uses code execution to analyze problems and provide data-driven insights through computational analysis. Make sure the Python scripts are small and output little text because context windows limitations. Use python code analysis as a tool to calculate useful stuff, not to develop an app that needs to be executed and outputs anything that is not plain text.",
+      "temperature": 0.7,
+      "tools": [{"type": "code_interpreter"}]
+    },
+    "web_search": {
+      "name": "Web Research Specialist", 
+      "description": "Information researcher who uses web search to find current data, external perspectives, and real-world context.",
+      "temperature": 0.8,
+      "tools": [
+        {
+          "type": "web_search_preview",
+          "user_location": {
+            "type": "approximate",
+            "country": "US",
+            "region": "California",
+            "city": "Los Angeles"
+          },
+          "search_context_size": "low"
+        }
+      ]
+    }
+  }
+}
