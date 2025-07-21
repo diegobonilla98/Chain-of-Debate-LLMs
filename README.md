@@ -359,8 +359,8 @@ If you use Chain of Debate in your research, please cite:
 ```bibtex
 @software{chain_of_debate,
   title={Chain of Debate: A Collaborative AI Debate System},
-  author={Your Name},
+  author={Diego Bonilla Salvador},
   year={2025},
-  url={https://github.com/yourusername/chain-of-debate}
+  url={https://github.com/diegobonilla98/Chain-of-Debate-LLMs}
 }
 ```
